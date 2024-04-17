@@ -80,7 +80,7 @@ function Canvas() {
       );
 
       if (clickedSquare) {
-        if (e.ctrlKey) {
+        if (e.shiftKey) {
           const updatedSquares = squares.filter(square => square.id !== clickedSquare.id);
           setSquares(updatedSquares);
         } else {
